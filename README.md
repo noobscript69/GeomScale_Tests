@@ -44,8 +44,8 @@ Test: Use volesti to approximate the same integrals as in previous test by [simp
 
 - Used library volesti to compute integral f(x) = exp^{-a||x||^2} till 100th dimension using uniform and gaussian sampling.
  Observation of ``f(x) = exp^{-a||x||^2}``
- |Accuracy||Runtime|
- |---||---|
+ |Accuracy|Runtime|
+ |---|---|
  
 
 *Code*
