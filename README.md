@@ -1,3 +1,3 @@
 # Monte Carlo Integration
->Easy
+*Easy*
 ---
