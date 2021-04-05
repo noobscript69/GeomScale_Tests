@@ -44,9 +44,9 @@ Test: Use volesti to approximate the same integrals as in previous test by [simp
 
 - Used library volesti to compute integral f(x) = exp^{-a||x||^2} till 100th dimension using uniform and gaussian sampling.
 ---
- Observation of ``f(x) = exp^{-a||x||^2}``
- |Accuracy|Runtime|
- |---|---|
+Observation of ``f(x) = exp^{-a||x||^2}``
+- *Accuracy* : `cubature` is more accurate for small dimentations and it breaks easily for higher dimentions (n>=24). On otherside `volesti` perfectly works with a higher dimention with very less posibility of error.
+- *Runtime* : Comparing upto 23rd dimention the runtime taken by `volesti` was definitely less then `cubature`.
  
 
 *Code*
