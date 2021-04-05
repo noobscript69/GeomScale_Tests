@@ -1,2 +1,3 @@
 # Monte Carlo Integration
->Easy<font size="5">
+>Easy
+---
