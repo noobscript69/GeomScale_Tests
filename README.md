@@ -23,5 +23,16 @@ Medium: Use the R package [cubature](https://cran.r-project.org/web/packages/cub
 
 - Installed R package ``cubeture`` and used ``cubeture`` library to compute the integral of f(x) = exp^{-a||x||^2} over the cube [-1,1]^n.
 - I tried varios values of a=[0,1,2,3] and the values of n incrementing by 1 stating from the number 1.
-- At the value of n=24 the program got crashed showing the result 0.
+- At the value of n=24 the program got crashed due to the higher dimention used showing the result 0.
 - Ovserving this we can say this package is way more less efficient than `volesti` package. using volesti approximation we can compute up to a few hundreds of dimensions. 
+
+*Code*
+```R
+
+library(cubature) # load the package "cubature"
+testFnWeb <- function(x) {
+  exp(-a * sum(x^2))
+}
+hcubature(testFnWeb, rep(-1,n), rep(1,n), tol=1e-4)
+
+```
