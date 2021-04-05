@@ -43,6 +43,7 @@ hcubature(testFnWeb, rep(-1,n), rep(1,n), tol=1e-4)
 Test: Use volesti to approximate the same integrals as in previous test by [simple Monte Carlo](https://en.wikipedia.org/wiki/Monte_Carlo_integration) based on uniform sampling and by Importance Sampling using multivariate spherical Gaussian. Comment on the accuracy and run-time.
 
 - Used library volesti to compute integral f(x) = exp^{-a||x||^2} till 100th dimension using uniform and gaussian sampling.
+---
  Observation of ``f(x) = exp^{-a||x||^2}``
  |Accuracy|Runtime|
  |---|---|
