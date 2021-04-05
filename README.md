@@ -9,7 +9,7 @@ Task: Easy: compile and run volesti. Read the CRAN package [documentation](https
 *Code*
 ```R
 library(volesti)
-P = gen_cube(100,'H')
+P = gen_rand_hpoly(10, 50, generator = list(constants = "sphere"))
 volumes <- list()
 for (i in 1:10) {
 volumes[[i]] <- volume(P) # default parameters
@@ -17,3 +17,4 @@ volumes[[i]] <- volume(P) # default parameters
 options(digits=10)
 summary(as.numeric(volumes))
 ```
+# *Medium*
